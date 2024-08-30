@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>88天背单词计划</title>
+    <style>
+        body {
+            font-family: sans-serif;
+        }
+
+        .container {
+            display: grid;
+            grid-template-columns: repeat(8, 1fr);
+            /* 8 columns */
+            gap: 10px;
+            padding: 20px;
+        }
+
+        .day-box {
+            width: 50px;
+            height: 50px;
+            border: 2px solid #ccc;
+            text-align: center;
+            line-height: 50px;
+            font-size: 20px;
+            cursor: pointer;
+        }
+
+        .checked {
+            background-color: lightgreen;
+        }
+    </style>
+</head>
+
+<body>
+
+    <h1>88天背单词计划</h1>
+
+    <div class="container">
+        <!-- 88个小方框 -->
+        <div class="day-box" data-day="1">1</div>
+        <div class="day-box" data-day="2">2</div>
+        <div class="day-box" data-day="3">3</div>
+        <div class="day-box" data-day="4">4</div>
+        <div class="day-box" data-day="5">5</div>
+        <div class="day-box" data-day="6">6</div>
+        <div class="day-box" data-day="7">7</div>
+        <div class="day-box" data-day="8">8</div>
+        <div class="day-box" data-day="9">9</div>
+        <div class="day-box" data-day="10">10</div>
+        <div class="day-box" data-day="11">11</div>
+        <div class="day-box" data-day="12">12</div>
+        <div class="day-box" data-day="13">13</div>
+        <div class="day-box" data-day="14">14</div>
+        <div class="day-box" data-day="15">15</div>
+        <div class="day-box" data-day="16">16</div>
+        <div class="day-box" data-day="17">17</div>
+        <div class="day-box" data-day="18">18</div>
+        <div class="day-box" data-day="19">19</div>
+        <div class="day-box" data-day="20">20</div>
+        <div class="day-box" data-day="21">21</div>
+        <div class="day-box" data-day="22">22</div>
+        <div class="day-box" data-day="23">23</div>
+        <div class="day-box" data-day="24">24</div>
+        <div class="day-box" data-day="25">25</div>
+        <div class="day-box" data-day="26">26</div>
+        <div class="day-box" data-day="27">27</div>
+        <div class="day-box" data-day="28">28</div>
+        <div class="day-box" data-day="29">29</div>
+        <div class="day-box" data-day="30">30</div>
+        <div class="day-box" data-day="31">31</div>
+        <div class="day-box" data-day="32">32</div>
+        <div class="day-box" data-day="33">33</div>
+        <div class="day-box" data-day="34">34</div>
+        <div class="day-box" data-day="35">35</div>
+        <div class="day-box" data-day="36">36</div>
+        <div class="day-box" data-day="37">37</div>
+        <div class="day-box" data-day="38">38</div>
+        <div class="day-box" data-day="39">39</div>
+        <div class="day-box" data-day="40">40</div>
+        <div class="day-box" data-day="41">41</div>
+        <div class="day-box" data-day="42">42</div>
+        <div class="day-box" data-day="43">43</div>
+        <div class="day-box" data-day="44">44</div>
+        <div class="day-box" data-day="45">45</div>
+        <div class="day-box" data-day="46">46</div>
+        <div class="day-box" data-day="47">47</div>
+        <div class="day-box" data-day="48">48</div>
+        <div class="day-box" data-day="49">49</div>
+        <div class="day-box" data-day="50">50</div>
+        <div class="day-box" data-day="51">51</div>
+        <div class="day-box" data-day="52">52</div>
+        <div class="day-box" data-day="53">53</div>
+        <div class="day-box" data-day="54">54</div>
+        <div class="day-box" data-day="55">55</div>
+        <div class="day-box" data-day="56">56</div>
+        <div class="day-box" data-day="57">57</div>
+        <div class="day-box" data-day="58">58</div>
+        <div class="day-box" data-day="59">59</div>
+        <div class="day-box" data-day="60">60</div>
+        <div class="day-box" data-day="61">61</div>
+        <div class="day-box" data-day="62">62</div>
+        <div class="day-box" data-day="63">63</div>
+        <div class="day-box" data-day="64">64</div>
+        <div class="day-box" data-day="65">65</div>
+        <div class="day-box" data-day="66">66</div>
+        <div class="day-box" data-day="67">67</div>
+        <div class="day-box" data-day="68">68</div>
+        <div class="day-box" data-day="69">69</div>
+        <div class="day-box" data-day="70">70</div>
+        <div class="day-box" data-day="71">71</div>
+        <div class="day-box" data-day="72">72</div>
+        <div class="day-box" data-day="73">73</div>
+        <div class="day-box" data-day="74">74</div>
+        <div class="day-box" data-day="75">75</div>
+        <div class="day-box" data-day="76">76</div>
+        <div class="day-box" data-day="77">77</div>
+        <div class="day-box" data-day="78">78</div>
+        <div class="day-box" data-day="79">79</div>
+        <div class="day-box" data-day="80">80</div>
+        <div class="day-box" data-day="81">81</div>
+        <div class="day-box" data-day="82">82</div>
+        <div class="day-box" data-day="83">83</div>
+        <div class="day-box" data-day="84">84</div>
+        <div class="day-box" data-day="85">85</div>
+        <div class="day-box" data-day="86">86</div>
+        <div class="day-box" data-day="87">87</div>
+        <div class="day-box" data-day="88">88</div>
+    </div>
+
+    <script>
+        const dayBoxes = document.querySelectorAll('.day-box');
+
+        // 从本地存储加载已完成的天数
+        const loadProgress = () => {
+            const completedDays = JSON.parse(localStorage.getItem('completedDays')) || [];
+            completedDays.forEach(day => {
+                document.querySelector(`.day-box[data-day="${day}"]`).classList.add('checked');
+            });
+        }
+
+        // 保存已完成的天数到本地存储
+        const saveProgress = () => {
+            const completedDays = Array.from(document.querySelectorAll('.day-box.checked')).map(box => parseInt(box.dataset.day));
+            localStorage.setItem('completedDays', JSON.stringify(completedDays));
+        }
+
+        // 点击事件处
+        dayBoxes.forEach(box => {
+            box.addEventListener('click', () => {
+                box.classList.toggle('checked');
+                saveProgress();
+            });
+        });
+
+        // 页面加载时加载进度
+        loadProgress();
+    </script>
+
+</body>
+
+</html>
